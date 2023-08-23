@@ -1,8 +1,9 @@
 "use client"
 
-import React from 'react';
-import Navbar from '../components/nav';
-import Footer from '../components/footer';
+import dynamic from "next/dynamic";
+//dynamically importing components to effectively use lazy loading
+const Navbar = dynamic(() => import('../components/nav'));
+const Footer = dynamic(() => import ('../components/footer'));
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import Head from 'next/head';
 

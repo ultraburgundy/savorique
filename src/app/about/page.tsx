@@ -1,8 +1,9 @@
-import Navbar from "../components/nav";
-import Footer from "../components/footer";
+import dynamic from "next/dynamic";
+//dynamically importing components to effectively use lazy loading
+const Navbar = dynamic(() => import('../components/nav'));
+const Footer = dynamic(() => import ('../components/footer'));
 import Head from "next/head";
 import Image, { StaticImageData } from "next/image";
-import { lazy } from "react";
 
 type TeamMemberProps = {
   name: string;
@@ -13,7 +14,6 @@ type TeamMemberProps = {
 
 const profileTemp = "/template.jpeg";
 const restaurantPicture = "/about-us-picture-001.webp";
-const restaurantPic002 = "/about-us-picture-002.webp";
 
 const TeamMember: React.FC<TeamMemberProps> = ({
   name,
@@ -108,7 +108,7 @@ const About: React.FC = () => {
               curating the most tantalizing food menus.
             </p>
           </div>
-          <div className="clear-both"></div> {/* Clears the float */}
+          <div className="clear-both"></div>
           <div className="mt-6">
             <div className="flex flex-col gap-6 text-lg sm:flex-row mt-4">
               {teamMembers.map((member, index) => (
