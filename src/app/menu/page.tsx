@@ -18,7 +18,7 @@ const FoodItem: React.FC<FoodItemProps> = ({ name, description, price }) => (
   </div>
 );
 
-export const menu = [
+const MenuItems = [
 
   {
     category: "Appetizers",
@@ -158,7 +158,7 @@ const Menu: React.FC = () => {
         
         <section className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="mb-4">
-            {menu.map((category, i) => (
+            {MenuItems.map((category, i) => (
               category.category === 'Happy Hour Special' && (
                 <section key={i}>
                   <h2 className="p-4 mb-2 text-4xl font-black border-2 text-stone-700 hover:text-stone-800 border-stone-800">
@@ -174,7 +174,7 @@ const Menu: React.FC = () => {
             ))}
           </div>
           <div className="mb-4">
-            {menu.map((category, i) => (
+            {MenuItems.map((category, i) => (
               category.category !== 'Happy Hour Special' && (
                 <section key={i}>
                   <h2 className="p-4 mb-2 text-4xl font-black border-2 shadow-md text-stone-700 hover:text-stone-800 border-stone-800">
@@ -196,4 +196,4 @@ const Menu: React.FC = () => {
   );
 };
 
-export default menu;
+export default Menu;
