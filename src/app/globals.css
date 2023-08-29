@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
 
 :root {
-@apply bg-stone-200;
+@apply bg-[#AD9685];
 font-family: 'Lora', serif;
 }
 .landing-page {

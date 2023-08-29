@@ -12,9 +12,9 @@ type FoodItemProps = {
 
 const FoodItem: React.FC<FoodItemProps> = ({ name, description, price }) => (
   <div className="p-4 mb-4">
-    <h3 className="text-xl font-bold text-stone-700">{name}</h3>
-    <p className="text-stone-600">{description}</p>
-    <p className="font-bold text-stone-500">${price.toFixed(2)}</p>
+    <h3 className="text-xl font-bold text-[#CAD178]">{name}</h3>
+    <p className="text-[#5E313E] font-semibold">{description}</p>
+    <p className="shadow-md bg-opacity-90 font-bold text-[#CAD178] bg-[#5E313E] w-24 p-1">${price.toFixed(2)}</p>
   </div>
 );
 
@@ -153,7 +153,7 @@ const Menu: React.FC = () => {
       <Navbar />
       <div className="container px-4 mx-auto mt-16">
         <header>
-          <h1 className="mb-4 text-6xl font-bold text-center text-stone-700">Menu</h1>
+          <h1 className="mb-4 text-6xl font-bold text-center text-[#CAD178]">Menu</h1>
         </header>
         
         <section className="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -161,7 +161,7 @@ const Menu: React.FC = () => {
             {MenuItems.map((category, i) => (
               category.category === 'Happy Hour Special' && (
                 <section key={i}>
-                  <h2 className="p-4 mb-2 text-4xl font-black border-2 text-stone-700 hover:text-stone-800 border-stone-800">
+                  <h2 className="p-4 mb-2 text-4xl font-black shadow-xl text-[#CAD178] hover:text-stone-800 bg-[#5E313E]">
                     {category.category}
                   </h2>
                   <div className="grid gap-4">
@@ -177,7 +177,7 @@ const Menu: React.FC = () => {
             {MenuItems.map((category, i) => (
               category.category !== 'Happy Hour Special' && (
                 <section key={i}>
-                  <h2 className="p-4 mb-2 text-4xl font-black border-2 shadow-md text-stone-700 hover:text-stone-800 border-stone-800">
+                  <h2 className="p-4 mb-2 text-4xl font-black  text-[#CAD178] hover:text-stone-800 shadow-xl bg-[#5E313E]">
                     {category.category}
                   </h2>
                   <div className="grid gap-4">

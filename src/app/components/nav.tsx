@@ -27,8 +27,8 @@ export default function Navbar() {
       <header
         className={`z-50 fixed px-6 py-8 w-full flex justify-between ${
           scrolledDown
-            ? "text-gray-800 ease-in-out duration-500 shadow-xl bg-stone-400 bg-opacity-75 placeholder-gray-200"
-            : "text-gray-800  bg-stone-300"
+            ? "text-[#D3D57C] ease-in-out duration-500 shadow-xl bg-[#512A36] bg-opacity-75 placeholder-gray-200"
+            : "text-[#D3D57C]  bg-[#5E313E]"
         }`}
       >
         <button
@@ -49,7 +49,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="flex items-center gap-12">
-        <a href="/menu"><h1 className="hidden text-4xl font-bold md:block">SAVORIQUE</h1></a>
+        <a href="/menu"><h1 className="hidden text-4xl font-bold md:block text-[#D3D57C]">SAVORIQUE</h1></a>
   
 
         </div>
@@ -68,8 +68,8 @@ export default function Navbar() {
           <li>
             <a
               href="/menu"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-gray-600 ${
-                scrolledDown ? "text-gray-800" : ""
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#ACB63E] ${
+                scrolledDown ? "text-[#D3D57C]" : ""
               }`}
               aria-labelledby="menu"
             >
@@ -79,8 +79,8 @@ export default function Navbar() {
           <li>
             <a
               href="/about"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-gray-600 ${
-                scrolledDown ? "text-gray-800" : ""
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#ACB63E] ${
+                scrolledDown ? "text-[#D3D57C]" : ""
               }`}
               aria-labelledby="about"
             >
@@ -90,8 +90,8 @@ export default function Navbar() {
           <li>
             <a
               href="/location"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-gray-600 ${
-                scrolledDown ? "text-gray-800" : ""
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#ACB63E] ${
+                scrolledDown ? "text-[#D3D57C]" : ""
               }`}
               aria-labelledby="visit"
             >
