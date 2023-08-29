@@ -32,14 +32,14 @@ const TeamMember: React.FC<TeamMemberProps> = ({
         />
       </div>
     </div>
-    <div className="w-full text-center mt-4">
-      <p className="font-black text-gray-600 uppercase text-lg sm:text-xl lg:text-2xl">
+    <div className="w-full text-center mt-4 bg-[#5E313E] p-2">
+      <p className="font-black text-[#D3D57C] uppercase text-lg sm:text-xl lg:text-2xl">
         {name}
       </p>
-      <p className="mb-4 text-sm italic font-light text-gray-700 sm:text-lg lg:text-xl">
+      <p className="mb-4 text-sm italic font-light text-[#D3D57C] sm:text-lg lg:text-xl">
         {role}
       </p>
-      <p className="font-semibold text-gray-600 text-sm sm:text-base lg:text-lg">
+      <p className="font-semibold text-[#CAD178] text-sm sm:text-base lg:text-lg">
         {description}
       </p>
     </div>
@@ -93,7 +93,7 @@ const About: React.FC = () => {
             />
           </div>
           <div className="absolute inset-0 z-10 flex items-center justify-center p-4 ">
-            <p className="text-stone-100 font-semibold text-lg sm:text-2xl lg:text-4xl text-center p-4 bg-stone-400 mt-4 shadow-xl bg-opacity-90">
+            <p className="text-[#CAD178] font-semibold text-lg sm:text-2xl lg:text-4xl text-center p-4 bg-[#5E313E] mt-4 shadow-xl bg-opacity-90">
               Our restaurant was founded in 1990 with the vision of providing
               the best dining experience. Over the years, we have managed to
               establish a strong reputation for our exceptional dishes and
@@ -103,8 +103,8 @@ const About: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="sm:p-16 p-4 bg-stone-400 shadow-xl">
-          <p className="lg:text-4xl text-lg sm:text-2xl text-center text-stone-100 font-semibold">
+        <div className="sm:p-16 p-4 bg-[#5E313E] shadow-xl">
+          <p className="lg:text-4xl text-lg sm:text-2xl text-center text-[#CAD178] font-semibold">
             At the core of our team, you will find professional chefs who
             infuse their extensive knowledge and boundless creativity into
             curating the most tantalizing food menus.
