@@ -36,7 +36,7 @@ export default function Navbar() {
           onClick={toggleMenu}
         >
           <svg
-            className="w-8 h-8 stroke-gray-800"
+            className="w-8 h-8 stroke-[#D3D57C]"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -56,14 +56,14 @@ export default function Navbar() {
 
         {isMenuOpen && (
           <div
-            className="fixed inset-0 z-40 bg-gray-900 bg-opacity-75"
+            className="fixed inset-0 z-40 bg-black bg-opacity-75"
             onClick={toggleMenu}
           ></div>
         )}
         <ul
           className={`fixed top-0 left-0 h-full w-64 overflow-y-auto transition-transform transform ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
-          } md:transform-none md:relative md:flex md:items-center md:space-x-4 pt-16 md:pt-0 uppercase font-bold bg-gray-200 z-50 bg-opacity-75 md:bg-transparent md:w-auto`}
+          } md:transform-none md:relative md:flex md:items-center md:space-x-4 pt-16 md:pt-0 uppercase font-bold bg-[#5E313E] z-50  md:bg-transparent md:w-auto`}
         >
           <li>
             <a
