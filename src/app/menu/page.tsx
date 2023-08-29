@@ -152,9 +152,6 @@ const Menu: React.FC = () => {
       
       <Navbar />
       <div className="container px-4 mx-auto mt-16">
-        <header>
-          <h1 className="mb-4 text-6xl font-bold text-center text-[#CAD178]">Menu</h1>
-        </header>
         
         <section className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="mb-4">
