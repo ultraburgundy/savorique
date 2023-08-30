@@ -32,14 +32,14 @@ const TeamMember: React.FC<TeamMemberProps> = ({
         />
       </div>
     </div>
-    <div className="w-full text-center mt-4 bg-[#5E313E] p-2">
-      <p className="font-black text-[#D3D57C] uppercase text-lg sm:text-xl lg:text-2xl">
+    <div className="w-full text-center mt-4 bg-[#6C464F] p-2">
+      <p className="font-black text-[#9FA4C4] uppercase text-lg sm:text-xl lg:text-2xl">
         {name}
       </p>
-      <p className="mb-4 text-sm italic font-light text-[#D3D57C] sm:text-lg lg:text-xl">
+      <p className="mb-4 text-sm italic font-light text-[#B3CDD1] sm:text-lg lg:text-xl">
         {role}
       </p>
-      <p className="font-semibold text-[#CAD178] text-sm sm:text-base lg:text-lg">
+      <p className="font-semibold text-[#C7F0BD] text-sm sm:text-base lg:text-lg">
         {description}
       </p>
     </div>
@@ -92,8 +92,8 @@ const About: React.FC = () => {
               className="object-cover w-full h-full opacity-85"
             />
           </div>
-          <div className="absolute inset-0 z-10 flex items-center justify-center p-4 ">
-            <p className="text-[#CAD178] font-semibold text-lg sm:text-2xl lg:text-4xl text-center p-4 bg-[#5E313E] mt-4 shadow-xl bg-opacity-90">
+          <div className="absolute inset-0 z-10 flex items-center justify-center p-4  ">
+            <p className="text-[#C7F0BD] font-semibold text-lg sm:text-2xl lg:text-4xl text-center p-4 bg-[#6C464F] mt-4 shadow-xl">
               Our restaurant was founded in 1990 with the vision of providing
               the best dining experience. Over the years, we have managed to
               establish a strong reputation for our exceptional dishes and
@@ -103,15 +103,15 @@ const About: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="sm:p-16 p-4 bg-[#5E313E] shadow-xl">
-          <p className="lg:text-4xl text-lg sm:text-2xl text-center text-[#CAD178] font-semibold">
+        <div className="sm:p-16 p-4 bg-[#6C464F] shadow-xl">
+          <p className="lg:text-4xl text-lg sm:text-2xl text-center text-[#C7F0BD] font-semibold sm:w-1/2 m-auto">
             At the core of our team, you will find professional chefs who
             infuse their extensive knowledge and boundless creativity into
             curating the most tantalizing food menus.
           </p>
         </div>
         <div className="mt-6 p-8">
-          <div className="flex flex-col gap-6 text-lg sm:flex-row mt-4">
+          <div className="flex flex-col gap-6 text-lg sm:flex-row mt-4 sm:w-1/2 m-auto">
             {teamMembers.map((member, index) => (
               <TeamMember key={index} {...member} />
             ))}

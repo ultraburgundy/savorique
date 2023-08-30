@@ -12,9 +12,9 @@ type FoodItemProps = {
 
 const FoodItem: React.FC<FoodItemProps> = ({ name, description, price }) => (
   <div className="p-4 mb-4">
-    <h3 className="text-xl font-bold text-[#CAD178]">{name}</h3>
-    <p className="text-[#5E313E] font-semibold">{description}</p>
-    <p className="shadow-md bg-opacity-90 font-bold text-[#CAD178] bg-[#5E313E] w-24 p-1">${price.toFixed(2)}</p>
+    <h3 className="text-xl font-bold text-[#C7F0BD]">{name}</h3>
+    <p className="text-[#6C464F] font-semibold">{description}</p>
+    <p className="shadow-md bg-opacity-90 font-bold text-[#C7F0BD] bg-[#6C464F] w-24 p-1">${price.toFixed(2)}</p>
   </div>
 );
 
@@ -158,7 +158,7 @@ const Menu: React.FC = () => {
             {MenuItems.map((category, i) => (
               category.category === 'Happy Hour Special' && (
                 <section key={i}>
-                  <h2 className="p-4 mb-2 text-4xl font-black shadow-xl text-[#CAD178] hover:text-stone-800 bg-[#5E313E]">
+                  <h2 className="p-4 mb-2 text-4xl font-black shadow-xl text-[#C7F0BD] bg-[#6C464F]">
                     {category.category}
                   </h2>
                   <div className="grid gap-4">
@@ -174,7 +174,7 @@ const Menu: React.FC = () => {
             {MenuItems.map((category, i) => (
               category.category !== 'Happy Hour Special' && (
                 <section key={i}>
-                  <h2 className="p-4 mb-2 text-4xl font-black  text-[#CAD178] hover:text-stone-800 shadow-xl bg-[#5E313E]">
+                  <h2 className="p-4 mb-2 text-4xl font-black  text-[#C7F0BD] shadow-xl bg-[#6C464F]">
                     {category.category}
                   </h2>
                   <div className="grid gap-4">
