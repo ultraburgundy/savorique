@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 const Navbar = dynamic(() => import('../components/nav'));
 const Footer = dynamic(() => import ('../components/footer'));
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import PageTransition from "../components/pageTransition";
 import Head from 'next/head';
 
 type LocationProps = {
@@ -55,6 +56,7 @@ const VisitPage: React.FC = () => {
 
   return (
     <>
+    <PageTransition>
       <Head>
         <title>Visit Us | Our Restaurant</title>
         <meta name="description" content="Visit our restaurant at 123 Main St, New York. Open every day of the week from 7AM to 3PM." />
@@ -74,6 +76,7 @@ const VisitPage: React.FC = () => {
         </div>
       </main>
       <Footer/>
+      </PageTransition>
     </>
   );
 };

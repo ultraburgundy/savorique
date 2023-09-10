@@ -53,3 +53,18 @@ body::-webkit-scrollbar-thumb:hover, html::-webkit-scrollbar-thumb:hover {
     }
   }
   
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    transition: opacity 500ms;
+    opacity: 1;
+  }
+  .fade-exit {
+    opacity: 1;
+  }
+  .fade-exit-active {
+    transition: opacity 500ms;
+    opacity: 0;
+  }
+  

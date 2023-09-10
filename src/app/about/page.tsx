@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
+import PageTransition from "../components/pageTransition";
 
 const Navbar = dynamic(() => import("../components/nav"));
 const Footer = dynamic(() => import("../components/footer"));
@@ -73,6 +74,7 @@ const About: React.FC = () => {
 
   return (
     <>
+    <PageTransition>
       <Head>
         <title>About | Our Restaurant</title>
         <meta
@@ -119,6 +121,7 @@ const About: React.FC = () => {
         </div>
       </main>
       <Footer />
+      </PageTransition>
     </>
   );
 };

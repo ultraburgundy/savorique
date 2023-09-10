@@ -1,3 +1,4 @@
+import PageTransition from "../components/pageTransition";
 import dynamic from "next/dynamic";
 //dynamically importing components to effectively use lazy loading
 const Navbar = dynamic(() => import('../components/nav'));
@@ -145,6 +146,7 @@ const MenuItems = [
 const Menu: React.FC = () => {
   return (
     <>
+    <PageTransition>
       <Head>
         <title>Our Menu | Our Restaurant</title>
         <meta name="description" content="Discover the delectable dishes we serve at Our Restaurant. From starters to desserts, every dish is a culinary delight." />
@@ -189,6 +191,7 @@ const Menu: React.FC = () => {
         </section>
       </div>
       <Footer />
+      </PageTransition>
     </>
   );
 };
