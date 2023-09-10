@@ -11,14 +11,14 @@ const CTA: React.FC = () => {
         </Head>
 
         <header>
-          <h1 className="text-4xl font-black text-center uppercase md:text-6xl text-stone-800">Savorique</h1>
-          <p className="mt-6 text-2xl font-bold text-center text-stone-800">Experience the best food and atmosphere in town.</p>
+          <h1 className="text-4xl font-black text-center uppercase md:text-6xl bg-[#8093F1] text-[#C7F0BD] p-2 rounded-lg shadow-lg">Savorique</h1>
+          <p className="mt-6 text-2xl font-bold text-center text-[#B388EB]">Experience the best food and atmosphere in town.</p>
         </header>
   
         <nav className="mt-10">
           <Link 
             href="/menu" 
-            className="px-6 py-3 font-bold transition duration-500 ease-in-out rounded text-stone-200 bg-stone-800 hover:bg-stone-600"
+            className="px-6 py-3 font-bold transition duration-500 ease-in-out rounded-lg uppercase text-[#C7F0BD] bg-[#8093F1] hover:bg-[#6b7bca] shadow-lg"
           >
             View Our Menu
           </Link>
