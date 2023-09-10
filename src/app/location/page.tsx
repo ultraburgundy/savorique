@@ -21,12 +21,12 @@ lng: number;
 }
 
 const Location: React.FC<LocationProps> = ({ address, city, postalCode, country }) => (
-    <div className="p-4 mb-4 text-center ">
-      <h3 className="text-xl font-bold text-[#C7F0BD]">Location</h3>
-      <p className="text-[#6C464F] font-semibold">{address}</p>
-      <p className="text-[#6C464F] font-semibold">{city}</p>
-      <p className="text-[#6C464F] font-semibold">{postalCode}</p>
-      <p className="text-[#6C464F] font-semibold">{country}</p>
+    <div className="p-4 mb-4 text-center bg-[#8093F1] rounded-lg shadow-xl">
+      <h3 className="text-3xl font-black uppercase text-[#72DDF7]">Location</h3>
+      <p className="text-[#C7F0BD] font-semibold">{address}</p>
+      <p className="text-[#C7F0BD] font-semibold">{city}</p>
+      <p className="text-[#C7F0BD] font-semibold">{postalCode}</p>
+      <p className="text-[#C7F0BD] font-semibold">{country}</p>
     </div>
   );
   
@@ -61,11 +61,11 @@ const VisitPage: React.FC = () => {
       </Head>
       <Navbar />
       <main aria-label="Visit us">
-        <div className="gap-4 py-8 mt-16 sm:flex">
-          <div className="flex-none min-h-screen p-2 sm:w-64 sm:ml-6">
-            <h1 className="mb-4 text-3xl font-black text-center uppercase text-[#6C464F]">Hours & Location</h1>
-            <h2 className="font-bold text-center uppercase text-[#C7F0BD]">Open Every Day Of The Week</h2>
-            <p className="text-center uppercase text-[#6C464F] font-semibold">7AM - 3PM</p>
+        <div className="gap-4 py-8 mt-16 sm:flex ">
+          <div className="flex-none min-h-screen p-2 sm:w-64 sm:ml-6 ">
+            <h1 className="mb-4 text-3xl font-black text-center uppercase text-[#72DDF7] bg-[#8093F1] rounded-lg p-2 shadow-xl">Hours</h1>
+            <h2 className="font-bold text-center uppercase text-[#8093F1]">Open Every Day Of The Week</h2>
+            <p className="text-center uppercase text-[#B388EB] font-semibold mb-4">7AM - 3PM</p>
             <Location {...restaurantLocation} />
           </div>
           <div className="w-full mr-8 md:flex-grow-1 md:block">

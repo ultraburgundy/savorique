@@ -27,8 +27,8 @@ export default function Navbar() {
       <header
         className={`z-50 fixed px-6 py-8 w-full flex justify-between ${
           scrolledDown
-            ? "text-[#C7F0BD] ease-in-out duration-500 shadow-xl bg-[#6C464F] bg-opacity-75 placeholder-gray-200"
-            : "text-[#C7F0BD]  bg-[#6C464F]"
+            ? "text-[#C7F0BD] ease-in-out duration-500 shadow-xl bg-[#8093F1] bg-opacity-75 placeholder-gray-200"
+            : "text-[#C7F0BD]  bg-[#8093F1]"
         }`}
       >
         <button
@@ -36,7 +36,7 @@ export default function Navbar() {
           onClick={toggleMenu}
         >
           <svg
-            className="w-8 h-8 stroke-[#C7F0BD]"
+            className="w-8 h-8 stroke-[#72DDF7]"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -49,7 +49,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="flex items-center gap-12">
-        <a href="/menu"><h1 className="hidden text-4xl font-bold md:block text-[#C7F0BD] hover:text-[#B3CDD1]">SAVORIQUE</h1></a>
+        <a href="/menu"><h1 className="hidden text-4xl font-bold md:block text-[#C7F0BD] hover:text-[#F7AEF8]">SAVORIQUE</h1></a>
   
 
         </div>
@@ -63,12 +63,12 @@ export default function Navbar() {
         <ul
           className={`fixed top-0 left-0 h-full w-64 overflow-y-auto transition-transform transform ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
-          } md:transform-none md:relative md:flex md:items-center md:space-x-4 pt-16 md:pt-0 uppercase font-bold bg-[#6C464F] z-50  md:bg-transparent md:w-auto`}
+          } md:transform-none md:relative md:flex md:items-center md:space-x-4 pt-16 md:pt-0 uppercase font-bold bg-[#8093F1] z-50  md:bg-transparent md:w-auto`}
         >
           <li>
             <a
               href="/menu"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#B3CDD1] ${
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#F7AEF8] ${
                 scrolledDown ? "text-[#C7F0BD]" : ""
               }`}
               aria-labelledby="menu"
@@ -79,7 +79,7 @@ export default function Navbar() {
           <li>
             <a
               href="/about"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#B3CDD1] ${
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#F7AEF8] ${
                 scrolledDown ? "text-[#C7F0BD]" : ""
               }`}
               aria-labelledby="about"
@@ -90,7 +90,7 @@ export default function Navbar() {
           <li>
             <a
               href="/location"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#B3CDD1] ${
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#F7AEF8] ${
                 scrolledDown ? "text-[#C7F0BD]" : ""
               }`}
               aria-labelledby="visit"

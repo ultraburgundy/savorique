@@ -12,9 +12,9 @@ type FoodItemProps = {
 
 const FoodItem: React.FC<FoodItemProps> = ({ name, description, price }) => (
   <div className="p-4 mb-4">
-    <h3 className="text-xl font-bold text-[#C7F0BD]">{name}</h3>
-    <p className="text-[#6C464F] font-semibold">{description}</p>
-    <p className="shadow-md bg-opacity-90 font-bold text-[#C7F0BD] bg-[#6C464F] w-24 p-1">${price.toFixed(2)}</p>
+    <h3 className="text-xl font-bold text-[#B388EB]">{name}</h3>
+    <p className="text-[#8093F1] font-semibold">{description}</p>
+    <p className=" font-bold text-[#B388EB]  w-24 p-1">${price.toFixed(2)}</p>
   </div>
 );
 
@@ -158,10 +158,10 @@ const Menu: React.FC = () => {
             {MenuItems.map((category, i) => (
               category.category === 'Happy Hour Special' && (
                 <section key={i}>
-                  <h2 className="p-4 mb-2 text-4xl font-black shadow-xl text-[#C7F0BD] bg-[#6C464F]">
+                  <h2 className="p-4 mb-2 text-4xl font-black shadow-xl text-[#C7F0BD] bg-[#8093F1] rounded-lg">
                     {category.category}
                   </h2>
-                  <div className="grid gap-4">
+                  <div className="grid gap-4 border-2 border-[#8093F1] m-4 rounded-lg">
                     {category.items.map((item, j) => (
                       <FoodItem key={j} {...item} />
                     ))}
@@ -174,10 +174,10 @@ const Menu: React.FC = () => {
             {MenuItems.map((category, i) => (
               category.category !== 'Happy Hour Special' && (
                 <section key={i}>
-                  <h2 className="p-4 mb-2 text-4xl font-black  text-[#C7F0BD] shadow-xl bg-[#6C464F]">
+                  <h2 className="p-4 mb-2 text-4xl font-black  text-[#C7F0BD] shadow-xl bg-[#8093F1] rounded-lg">
                     {category.category}
                   </h2>
-                  <div className="grid gap-4">
+                  <div className="grid gap-4 border-2 border-[#8093F1] m-4 rounded-lg">
                     {category.items.map((item, j) => (
                       <FoodItem key={j} {...item} />
                     ))}
