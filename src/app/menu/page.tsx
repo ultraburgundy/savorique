@@ -5,6 +5,7 @@ const Navbar = dynamic(() => import('../components/nav'));
 const Footer = dynamic(() => import ('../components/footer'));
 import Head from 'next/head';
 
+
 type FoodItemProps = {
   name: string;
   description: string;
@@ -13,9 +14,9 @@ type FoodItemProps = {
 
 const FoodItem: React.FC<FoodItemProps> = ({ name, description, price }) => (
   <div className="p-4 mb-4">
-    <h3 className="text-xl font-bold text-[#B388EB]">{name}</h3>
-    <p className="text-[#8093F1] font-semibold">{description}</p>
-    <p className=" font-bold text-[#B388EB]  w-24 p-1">${price.toFixed(2)}</p>
+    <h3 className="text-xl font-bold text-blue-950">{name}</h3>
+    <p className="text-blue-600 font-semibold">{description}</p>
+    <p className=" font-bold text-blue-950  w-24 p-1">${price.toFixed(2)}</p>
   </div>
 );
 
@@ -160,10 +161,10 @@ const Menu: React.FC = () => {
             {MenuItems.map((category, i) => (
               category.category === 'Happy Hour Special' && (
                 <section key={i}>
-                  <h2 className="p-4 mb-2 text-4xl font-black shadow-xl text-[#C7F0BD] bg-[#8093F1] rounded-lg">
+                  <h2 className="p-4 mb-2 text-4xl font-black shadow-xl text-blue-100 bg-blue-900 rounded-lg">
                     {category.category}
                   </h2>
-                  <div className="grid gap-4 border-2 border-[#8093F1] m-4 rounded-lg">
+                  <div className="grid gap-4 border-2 border-[#8093F1] m-4 rounded-lg bg-white bg-opacity-75">
                     {category.items.map((item, j) => (
                       <FoodItem key={j} {...item} />
                     ))}
@@ -176,10 +177,10 @@ const Menu: React.FC = () => {
             {MenuItems.map((category, i) => (
               category.category !== 'Happy Hour Special' && (
                 <section key={i}>
-                  <h2 className="p-4 mb-2 text-4xl font-black  text-[#C7F0BD] shadow-xl bg-[#8093F1] rounded-lg">
+                  <h2 className="p-4 mb-2 text-4xl font-black  text-blue-100 shadow-xl bg-blue-900 rounded-lg">
                     {category.category}
                   </h2>
-                  <div className="grid gap-4 border-2 border-[#8093F1] m-4 rounded-lg">
+                  <div className="grid gap-4 border-2 border-[#8093F1] m-4 rounded-lg bg-white bg-opacity-75">
                     {category.items.map((item, j) => (
                       <FoodItem key={j} {...item} />
                     ))}

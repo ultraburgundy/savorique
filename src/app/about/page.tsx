@@ -33,14 +33,14 @@ const TeamMember: React.FC<TeamMemberProps> = ({
         />
       </div>
     </div>
-    <div className="w-full text-center mt-4 bg-[#8093F1] p-2 rounded-lg shadow-xl">
-      <p className="font-black text-[#72DDF7] uppercase text-lg sm:text-xl lg:text-2xl ">
+    <div className="w-full text-center mt-4 bg-white bg-opacity-75 p-2 rounded-lg shadow-xl">
+      <p className="font-black text-blue-600 uppercase text-lg sm:text-xl lg:text-2xl ">
         {name}
       </p>
-      <p className="mb-4 text-sm italic font-bold text-[#C7F0BD] sm:text-lg lg:text-xl">
+      <p className="mb-4 text-sm italic font-bold text-blue-900 sm:text-lg lg:text-xl">
         {role}
       </p>
-      <p className="font-semibold text-[#C7F0BD] text-sm sm:text-base lg:text-lg">
+      <p className="font-semibold text-blue-950 text-sm sm:text-base lg:text-lg">
         {description}
       </p>
     </div>
@@ -95,7 +95,7 @@ const About: React.FC = () => {
             />
           </div>
           <div className="absolute inset-0 z-10 flex items-center justify-center p-4  ">
-            <p className="text-[#C7F0BD] font-semibold text-lg sm:text-2xl lg:text-4xl text-center p-4 bg-[#8093F1] mt-4 shadow-xl w-1/2 rounded-lg">
+            <p className="text-blue-950 font-semibold text-lg sm:text-2xl lg:text-4xl text-center p-4 bg-white  mt-4 shadow-xl w-1/2 rounded-lg">
               Our restaurant was founded in 1990 with the vision of providing
               the best dining experience. Over the years, we have managed to
               establish a strong reputation for our exceptional dishes and
@@ -105,8 +105,8 @@ const About: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="sm:p-16 p-4 bg-[#8093F1] shadow-xl">
-          <p className="lg:text-4xl text-lg sm:text-2xl text-center text-[#C7F0BD] font-semibold sm:w-1/2 m-auto ">
+        <div className="sm:p-16 p-4  shadow-xl bg-white bg-opacity-75">
+          <p className="lg:text-4xl text-lg sm:text-2xl text-center text-blue-900 font-semibold sm:w-1/2 m-auto ">
             At the core of our team, you will find professional chefs who
             infuse their extensive knowledge and boundless creativity into
             curating the most tantalizing food menus.

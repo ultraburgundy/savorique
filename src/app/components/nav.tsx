@@ -1,5 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
+import {BiFoodMenu, BiGroup} from "react-icons/bi";
+import { IoLocationOutline} from "react-icons/io5";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,8 +29,8 @@ export default function Navbar() {
       <header
         className={`z-50 fixed px-6 py-8 w-full flex justify-between ${
           scrolledDown
-            ? "text-[#C7F0BD] ease-in-out duration-500 shadow-xl bg-[#8093F1] bg-opacity-75 placeholder-gray-200"
-            : "text-[#C7F0BD]  bg-[#8093F1]"
+            ? "text-blue-100 ease-in-out duration-500 shadow-xl bg-blue-950 bg-opacity-75 placeholder-gray-200"
+            : "text-blue-100  bg-blue-950"
         }`}
       >
         <button
@@ -36,7 +38,7 @@ export default function Navbar() {
           onClick={toggleMenu}
         >
           <svg
-            className="w-8 h-8 stroke-[#C7F0BD]"
+            className="w-8 h-8 stroke-blue-100"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -49,7 +51,7 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="flex items-center gap-12">
-        <a href="/menu"><h1 className="hidden text-4xl font-bold md:block text-[#C7F0BD] hover:text-[#F7AEF8]">SAVORIQUE</h1></a>
+        <a href="/menu"><h1 className="hidden text-4xl font-bold md:block text-blue-100 hover:text-blue-200">SAVORIQUE</h1></a>
   
 
         </div>
@@ -63,39 +65,39 @@ export default function Navbar() {
         <ul
           className={`fixed top-0 left-0 h-full w-64 overflow-y-auto transition-transform transform ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
-          } md:transform-none md:relative md:flex md:items-center md:space-x-4 pt-16 md:pt-0 uppercase font-bold bg-[#8093F1] z-50  md:bg-transparent md:w-auto`}
+          } md:transform-none md:relative md:flex md:items-center md:space-x-4 pt-16 md:pt-0 uppercase font-bold bg-blue-950 z-50  md:bg-transparent md:w-auto`}
         >
           <li>
             <a
               href="/menu"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#F7AEF8] ${
-                scrolledDown ? "text-[#C7F0BD]" : ""
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-blue-200 ${
+                scrolledDown ? "text-blue-100" : ""
               }`}
               aria-labelledby="menu"
             >
-              Menu
+             <BiFoodMenu className=" w-6 h-6 inline-flex m-auto"/> Menu
             </a>
           </li>
           <li>
             <a
               href="/about"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#F7AEF8] ${
-                scrolledDown ? "text-[#C7F0BD]" : ""
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-blue-200 ${
+                scrolledDown ? "text-blue-100" : ""
               }`}
               aria-labelledby="about"
             >
-              About Us
+             <BiGroup className=" w-6 h-6 inline-flex m-auto"/> About Us
             </a>
           </li>
           <li>
             <a
               href="/location"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-[#F7AEF8] ${
-                scrolledDown ? "text-[#C7F0BD]" : ""
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-blue-200 ${
+                scrolledDown ? "text-blue-100" : ""
               }`}
               aria-labelledby="visit"
             >
-              Hours & Location
+             <IoLocationOutline className=" w-6 h-6 inline-flex m-auto" /> Hours & Location
             </a>
           </li>
         </ul>
