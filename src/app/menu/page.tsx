@@ -168,7 +168,9 @@ const Menu: React.FC = () => {
                     {category.items.map((item, j) => (
                       <FoodItem key={j} {...item} />
                     ))}
+                    
                   </div>
+                 
                 </section>
               )
             ))}

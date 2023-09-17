@@ -86,6 +86,20 @@ const About: React.FC = () => {
       <main aria-label="About Us">
         <div className="relative h-screen">
           <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-10 flex items-start justify-start bg-blue-50 bg-opacity-90 md:w-1/2 p-4  ">
+            <div className="flex m-auto">
+              
+            <p className="text-blue-900 font-semibold text-2xl p-4 mt-4 rounded-lg">
+            <h1 className="uppercase font-black flex md:text-6xl text-4xl ">About Us</h1>
+              Our restaurant was founded in 1990 with the vision of providing
+              the best dining experience. Over the years, we have managed to
+              establish a strong reputation for our exceptional dishes and
+              first-class service. We are committed to sourcing and using
+              high-quality, local produce in our dishes. Our menu changes
+              seasonally, reflecting the best that the market has to offer.
+            </p>
+            </div>
+          </div>
             <Image
               src={restaurantPicture}
               alt="Restaurant Picture"
@@ -94,16 +108,7 @@ const About: React.FC = () => {
               className="object-cover w-full h-full opacity-85"
             />
           </div>
-          <div className="absolute inset-0 z-10 flex items-center justify-center p-4  ">
-            <p className="text-blue-950 font-semibold text-lg sm:text-2xl lg:text-4xl text-center p-4 bg-white  mt-4 shadow-xl w-1/2 rounded-lg">
-              Our restaurant was founded in 1990 with the vision of providing
-              the best dining experience. Over the years, we have managed to
-              establish a strong reputation for our exceptional dishes and
-              first-class service. We are committed to sourcing and using
-              high-quality, local produce in our dishes. Our menu changes
-              seasonally, reflecting the best that the market has to offer.
-            </p>
-          </div>
+     
         </div>
         <div className="sm:p-16 p-4  shadow-xl bg-white bg-opacity-75">
           <p className="lg:text-4xl text-lg sm:text-2xl text-center text-blue-900 font-semibold sm:w-1/2 m-auto ">

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import {IoFastFoodSharp} from "react-icons/io5";
 
 
 const CTA: React.FC = () => {
@@ -11,14 +12,17 @@ const CTA: React.FC = () => {
         </Head>
 
         <header>
-          <h1 className="text-4xl font-black text-center uppercase md:text-6xl bg-[#8093F1] text-[#C7F0BD] p-2 rounded-lg shadow-lg">Savorique</h1>
-          <p className="mt-6 text-2xl font-bold text-center text-[#B388EB]">Experience the best food and atmosphere in town.</p>
+         <div className="text-4xl font-black text-center uppercase md:text-6xl bg-blue-950 bg-opacity-80 text-blue-100 p-2 rounded-lg shadow-lg">
+          <h1 > <IoFastFoodSharp className="inline-flex m-4" />Savorique</h1>
+          <h2 className="flex justify-end text-xl md:text-3xl ">Restaurant</h2>
+          </div>
+          
         </header>
   
         <nav className="mt-10">
           <Link 
             href="/menu" 
-            className="px-6 py-3 font-bold transition duration-500 ease-in-out rounded-lg uppercase text-[#C7F0BD] bg-[#8093F1] hover:bg-[#6b7bca] shadow-lg"
+            className="px-6 py-3 font-bold bg-opacity-80  transition duration-500 ease-in-out rounded-lg uppercase text-blue-100 bg-blue-950 hover:bg-blue-900 shadow-lg"
           >
             View Our Menu
           </Link>

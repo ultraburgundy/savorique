@@ -2,10 +2,13 @@
 import { useEffect, useState } from "react";
 import {BiFoodMenu, BiGroup} from "react-icons/bi";
 import { IoLocationOutline} from "react-icons/io5";
+import Modal from "./modal";
+import ReservationForm from "./reservation";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolledDown, setScrolledDown] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -100,6 +103,15 @@ export default function Navbar() {
              <IoLocationOutline className=" w-6 h-6 inline-flex m-auto" /> Hours & Location
             </a>
           </li>
+          <button  onClick={() => setModalOpen(true)}  className="uppercase border-2 border-blue-200 p-2 rounded-lg hover:border-blue-300 absolute bottom-0 right-0 m-4 md:static">Book a Reservation</button>
+          <Modal 
+       
+        isOpen={isModalOpen} 
+        onClose={() => setModalOpen(false)} 
+        title="Reserve at Savorique"
+      >
+        <ReservationForm />
+      </Modal>
         </ul>
       </header>
     </nav>
