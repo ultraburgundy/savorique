@@ -17,7 +17,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
         <h2 className="text-2xl mb-4 text-blue-900">{title}</h2>
         {children}
         <span className="absolute top-0 right-0 m-4" onClick={onClose}>
-          <button className="text-2xl leading-none">×</button>
+          <button className="text-2xl leading-none text-blue-900">×</button>
         </span>
       </div>
     </div>
