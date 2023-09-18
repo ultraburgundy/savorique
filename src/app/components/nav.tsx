@@ -28,9 +28,10 @@ export default function Navbar() {
   }, []);
 
   return (
+    <>
     <nav className={`relative flex items-center justify-center p-12`}>
       <header
-        className={`z-50 fixed px-6 py-8 w-full flex justify-between ${
+        className={`z-50 fixed px-6 py-8 w-full flex justify-between items-center ${
           scrolledDown
             ? "text-blue-100 ease-in-out duration-500 shadow-xl bg-blue-950 bg-opacity-75 placeholder-gray-200"
             : "text-blue-100  bg-blue-950"
@@ -73,7 +74,7 @@ export default function Navbar() {
           <li>
             <a
               href="/menu"
-              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-blue-200 ${
+              className={`block px-2 py-1 rounded-md lg:text-xl hover:text-blue-200  ${
                 scrolledDown ? "text-blue-100" : ""
               }`}
               aria-labelledby="menu"
@@ -103,17 +104,20 @@ export default function Navbar() {
              <IoLocationOutline className=" w-6 h-6 inline-flex m-auto" /> Hours & Location
             </a>
           </li>
-          <button  onClick={() => setModalOpen(true)}  className="uppercase border-2 border-blue-200 p-2 rounded-lg hover:border-blue-300 absolute bottom-0 right-0 m-4 md:static">Book a Reservation</button>
-          <Modal 
-       
-        isOpen={isModalOpen} 
-        onClose={() => setModalOpen(false)} 
-        title="Reserve at Savorique"
-      >
-        <ReservationForm />
-      </Modal>
+     
         </ul>
+        <button  onClick={() => setModalOpen(true)}  className="uppercase border-2 border-blue-200 p-2 rounded-lg hover:border-blue-300 absolute bottom-0 right-0 m-4 md:static">Book a Reservation</button>
+
       </header>
     </nav>
+         <Modal 
+       
+         isOpen={isModalOpen} 
+         onClose={() => setModalOpen(false)} 
+         title="Reserve at Savorique"
+       >
+         <ReservationForm />
+       </Modal>
+       </>
   );
 }
